@@ -1,10 +1,10 @@
 org 0h
 
-; Nama  : SHERLY NIA HANDAYANI
-; NIM   : 18041082
+; Nama  : SHOFIYUN
+; NIM   : 17041094
 ; Kelas : 4i
 
-SHERLY:
+SHOFIYUN:
 Mov A,#00000001b    ;isi A dengan 00000001b
 Mov R3,#7           ;isi R3 dengan 7 Bit ke 1 nilainya 0 akan di geser ke kiri 7 langkah oleh DEC R3
 
@@ -43,7 +43,7 @@ RR A                ; data A diputar ke kanan
 INC R3              ; data R3 ditambah 1
 CJNE R3,#7,Kanan    ; membandingkan R3 dengan 7 jika R3 = 7 maka akan memanggil delay. jika tidak maka akan memangil kanan sampai nilai R3 = 7
 acall delay
-sjmp SHERLY
+sjmp SHOFIYUN
 
 
 delay: mov r0,#4h      ; 4 kali ulang
